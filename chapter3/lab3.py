@@ -164,7 +164,7 @@ def wheat(x, y):
 
 def random_wheat_spawn(num_wheat):
     x_range = [2*i + x for i, x in enumerate(sorted(random.sample(range(10, 790), num_wheat)))]
-    y_range = random.sample(range(20, 200), 100)
+    y_range = random.sample(range(20, 200), num_wheat)
 
     for n in range(num_wheat):
         x = x_range[n]
